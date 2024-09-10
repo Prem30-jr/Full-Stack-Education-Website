@@ -129,15 +129,15 @@ function output(input) {
 }
 
 function compare(triggerArray, replyArray, string) {
-    console.log(`Received input: ${string}`); // Debugging
+    console.log(`Received input: ${string}`); 
     
-    // Check for specific responses
+ 
     if (specificResponses[string]) {
-        console.log(`Specific response found for: ${string}`); // Debugging
+        console.log(`Specific response found for: ${string}`); 
         return specificResponses[string];
     }
 
-    // Handle general responses
+    
     for (let x = 0; x < triggerArray.length; x++) {
         for (let y = 0; y < triggerArray[x].length; y++) {
             let pattern = new RegExp(`\\b${triggerArray[x][y]}\\b`, 'i');
@@ -148,7 +148,7 @@ function compare(triggerArray, replyArray, string) {
         }
     }
 
-    console.log('No match found, checking fallback.'); // Debugging
+    console.log('No match found, checking fallback.'); 
     return containMessageCheck(string);
 }
 
