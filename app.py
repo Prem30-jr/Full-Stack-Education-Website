@@ -4,10 +4,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 
-
 app.config["MONGO_URI"] = "mongodb://localhost:27017/eduweb"
 mongo = PyMongo(app)
-
 
 users_collection = mongo.db.users  
 
@@ -35,13 +33,11 @@ def category4():
 def chatbot():
     return render_template('chatbot.html')
 
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-
        
         user = users_collection.find_one({"username": username})
 
@@ -57,7 +53,6 @@ def signup():
     username = request.form['signup_username']
     email = request.form['email']
     password = request.form['signup_password']
-
 
     hashed_password = generate_password_hash(password)
 
