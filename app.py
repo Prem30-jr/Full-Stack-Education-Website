@@ -28,7 +28,9 @@ def category3():
 @app.route('/category4')
 def category4():
     return render_template('category/category4.html')
-
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html')
 @app.route('/chatbot')
 def chatbot():
     return render_template('chatbot.html')
