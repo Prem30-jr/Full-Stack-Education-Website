@@ -114,26 +114,6 @@ Start the server
 Contributions are welcome! Please fork the repository and submit a pull request with your improvements or ideas.
 
 
-#### Features
-- User Authentication (Sign-up, Login)
-- Course Browsing and Enrolment
-- Streak Maintenance for Consistent Learning
-- Coding Practice After Watching Tutorials
-- AI-based Course Recommendations
-- 24/7 Chatbot for Doubt Clarification
-- Rewards, Gems, and Achievements for Learning
-- MongoDB Integration for Storing Course Data and User Profiles
-
-#### Technologies Used
-- Frontend:
-    HTML CSS JavaScript
-- Backend: Flask(Python)
-- Database: MongoDB
-- Other Libraries/Tools: Jinja for Templating, Flask Login for Authentication, Flask-PyMongo for MongoDB Integration
-
-#### Installation
-
-
 ## Screenshots
 ### Home Page
 ![Screenshot 2024-10-08 091045](https://github.com/user-attachments/assets/9674dcfd-ac46-40b4-beb5-a1e6504edc76)
